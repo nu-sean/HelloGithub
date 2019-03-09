@@ -13,6 +13,7 @@
 		04BF07332037FF2000188490 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BF07322037FF2000188490 /* Assets.xcassets */; };
 		04BF07362037FF2000188490 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BF07342037FF2000188490 /* LaunchScreen.storyboard */; };
 		04BF07392037FF2000188490 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF07382037FF2000188490 /* main.m */; };
+		0DABDEE0FD29C4EA24B91FA1 /* libPods-HelloGithub.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE87F0668A5BA3313784A9B9 /* libPods-HelloGithub.a */; };
 		AD8893CA220DDD92002A7FD7 /* Screenshot 2019-02-06 at 11.38.07 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = AD8893C9220DDD92002A7FD7 /* Screenshot 2019-02-06 at 11.38.07 PM.png */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +28,10 @@
 		04BF07352037FF2000188490 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04BF07372037FF2000188490 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04BF07382037FF2000188490 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9A1C46D99E3F78A3831749C6 /* Pods-HelloGithub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloGithub.release.xcconfig"; path = "Target Support Files/Pods-HelloGithub/Pods-HelloGithub.release.xcconfig"; sourceTree = "<group>"; };
 		AD8893C9220DDD92002A7FD7 /* Screenshot 2019-02-06 at 11.38.07 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2019-02-06 at 11.38.07 PM.png"; sourceTree = "<group>"; };
+		D83C63E0799B8FFCD34D39E7 /* Pods-HelloGithub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloGithub.debug.xcconfig"; path = "Target Support Files/Pods-HelloGithub/Pods-HelloGithub.debug.xcconfig"; sourceTree = "<group>"; };
+		FE87F0668A5BA3313784A9B9 /* libPods-HelloGithub.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelloGithub.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DABDEE0FD29C4EA24B91FA1 /* libPods-HelloGithub.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +51,8 @@
 			children = (
 				04BF07282037FF2000188490 /* HelloGithub */,
 				04BF07272037FF2000188490 /* Products */,
+				193E95F3622175A97520AA0F /* Pods */,
+				08E4CB11E1F3D394F1E94CB9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +81,23 @@
 			path = HelloGithub;
 			sourceTree = "<group>";
 		};
+		08E4CB11E1F3D394F1E94CB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE87F0668A5BA3313784A9B9 /* libPods-HelloGithub.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		193E95F3622175A97520AA0F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D83C63E0799B8FFCD34D39E7 /* Pods-HelloGithub.debug.xcconfig */,
+				9A1C46D99E3F78A3831749C6 /* Pods-HelloGithub.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,6 +105,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04BF073C2037FF2000188490 /* Build configuration list for PBXNativeTarget "HelloGithub" */;
 			buildPhases = (
+				A8D096279D2234D592F8CD79 /* [CP] Check Pods Manifest.lock */,
 				04BF07222037FF2000188490 /* Sources */,
 				04BF07232037FF2000188490 /* Frameworks */,
 				04BF07242037FF2000188490 /* Resources */,
@@ -143,6 +168,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A8D096279D2234D592F8CD79 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloGithub-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		04BF07222037FF2000188490 /* Sources */ = {
@@ -225,7 +275,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -274,7 +324,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -283,12 +333,14 @@
 		};
 		04BF073D2037FF2000188490 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D83C63E0799B8FFCD34D39E7 /* Pods-HelloGithub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = HelloGithub/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nu.HelloGithub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -299,12 +351,14 @@
 		};
 		04BF073E2037FF2000188490 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A1C46D99E3F78A3831749C6 /* Pods-HelloGithub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = HelloGithub/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nu.HelloGithub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
