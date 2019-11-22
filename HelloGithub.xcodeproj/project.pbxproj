@@ -14,6 +14,7 @@
 		04BF07362037FF2000188490 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BF07342037FF2000188490 /* LaunchScreen.storyboard */; };
 		04BF07392037FF2000188490 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BF07382037FF2000188490 /* main.m */; };
 		0DABDEE0FD29C4EA24B91FA1 /* libPods-HelloGithub.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE87F0668A5BA3313784A9B9 /* libPods-HelloGithub.a */; };
+		AD883E4F2387F33B00D145EC /* 22.png in Resources */ = {isa = PBXBuildFile; fileRef = AD883E4E2387F33B00D145EC /* 22.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		04BF07372037FF2000188490 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04BF07382037FF2000188490 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9A1C46D99E3F78A3831749C6 /* Pods-HelloGithub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloGithub.release.xcconfig"; path = "Target Support Files/Pods-HelloGithub/Pods-HelloGithub.release.xcconfig"; sourceTree = "<group>"; };
+		AD883E4E2387F33B00D145EC /* 22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22.png; sourceTree = "<group>"; };
 		D83C63E0799B8FFCD34D39E7 /* Pods-HelloGithub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloGithub.debug.xcconfig"; path = "Target Support Files/Pods-HelloGithub/Pods-HelloGithub.debug.xcconfig"; sourceTree = "<group>"; };
 		FE87F0668A5BA3313784A9B9 /* libPods-HelloGithub.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HelloGithub.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -65,6 +67,7 @@
 		04BF07282037FF2000188490 /* HelloGithub */ = {
 			isa = PBXGroup;
 			children = (
+				AD883E4E2387F33B00D145EC /* 22.png */,
 				04BF07292037FF2000188490 /* AppDelegate.h */,
 				04BF072A2037FF2000188490 /* AppDelegate.m */,
 				04BF072C2037FF2000188490 /* ViewController.h */,
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04BF07362037FF2000188490 /* LaunchScreen.storyboard in Resources */,
+				AD883E4F2387F33B00D145EC /* 22.png in Resources */,
 				04BF07332037FF2000188490 /* Assets.xcassets in Resources */,
 				04BF07312037FF2000188490 /* Main.storyboard in Resources */,
 			);
